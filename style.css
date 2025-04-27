@@ -1,0 +1,92 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    background: #111;
+    color: #fff;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: #ff3333;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    color: #ff9933;
+  }
+  
+  .countdown {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #ffcc00;
+  }
+  
+  .buy-section {
+    margin: 2rem 0;
+  }
+  
+  .buy-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(90deg, #ff0000, #ff9900);
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: transform 0.3s, background 0.3s;
+  }
+  
+  .buy-button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #ff9900, #ff0000);
+  }
+  
+  section {
+    margin: 3rem 0;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin-bottom: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #ff3333;
+  }
+  
+  p, ol, ul {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+  }
+  
+  ul, ol {
+    text-align: left;
+    margin-left: 2rem;
+  }
+  
+  footer {
+    margin-top: 4rem;
+    font-size: 1rem;
+    color: #777;
+  }
+  

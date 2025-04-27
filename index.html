@@ -1,0 +1,114 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ragebait - Only for the Mad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RAGEBAIT</h1>
+    <p class="tagline">Only those burning with rage may hold the bait 🔥</p>
+
+    <div id="countdown" class="countdown"></div>
+
+    <div class="buy-section">
+      <p>Think you're mad enough?</p>
+      <a href="#" class="buy-button">BUY $RAGE</a>
+    </div>
+
+    <section class="about">
+      <h2>What is Ragebait?</h2>
+      <p>
+        $RAGE is a Solana-based meme token built for the furious. We harness pure anger and turn it into unstoppable energy. 
+        No chill allowed. No calm people permitted. Only the furious survive.
+      </p>
+    </section>
+
+    <section class="how-to-buy">
+      <h2>How to Buy</h2>
+      <ol>
+        <li>1. Smash your keyboard at least once.</li>
+        <li>2. Set up a Solana wallet (Phantom, Solflare, etc.).</li>
+        <li>3. Load it with SOL — fueled by rage, obviously.</li>
+        <li>4. On launch day, click "BUY $RAGE" while gritting your teeth.</li>
+      </ol>
+    </section>
+
+    <section class="why-rage">
+      <h2>Why Rage Matters</h2>
+      <p>
+        Rage is pure energy. When you're mad, you act fast. You believe harder. You fight longer.
+        $RAGE isn't just a token — it's a revolution powered by your worst Monday mornings and that time your coffee spilled all over your laptop.
+      </p>
+    </section>
+
+    <section class="tokenomics">
+      <h2>Tokenomics</h2>
+      <ul>
+        <li><strong>1 Billion $RAGE</strong> Total Supply</li>
+        <li><strong>50%</strong> Fair Launch</li>
+        <li><strong>25%</strong> Liquidity Pool</li>
+        <li><strong>15%</strong> Marketing War Chest</li>
+        <li><strong>10%</strong> Team of Rage Enthusiasts</li>
+      </ul>
+    </section>
+
+    <section class="roadmap">
+      <h2>Roadmap to Madness</h2>
+      <ul>
+        <li>✅ Build the Rage Cult</li>
+        <li>✅ Launch the $RAGE Token</li>
+        <li>🔜 Meme Warfare Campaign</li>
+        <li>🔜 Influencer Rageshares</li>
+        <li>🔜 $RAGE Staking: Earn while being mad</li>
+      </ul>
+    </section>
+
+    <section class="faq">
+      <h2>FAQ</h2>
+      <h3>Is Ragebait real?</h3>
+      <p>As real as your broken keyboard after missing a snipe.</p>
+      
+      <h3>Do I really need to be angry?</h3>
+      <p>Yes. If you're chill, go buy something boring like bonds.</p>
+
+      <h3>Where can I buy $RAGE?</h3>
+      <p>Here, once the 7-day countdown hits zero. No early access. No insiders. Only rage.</p>
+    </section>
+
+    <footer>
+      <p>⚡ Built on Solana. Fueled by your rage. ⚡</p>
+    </footer>
+  </div>
+
+  <script>
+    // Countdown Timer
+    const countdown = document.getElementById('countdown');
+    const launchDate = new Date();
+    launchDate.setDate(launchDate.getDate() + 7);
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = launchDate.getTime() - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `
+        <div>${days}d ${hours}h ${minutes}m ${seconds}s until RAGE UNLEASHES</div>
+      `;
+
+      if (distance < 0) {
+        countdown.innerHTML = "RAGE LAUNCHED! BUY NOW!";
+      }
+    }
+
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
